@@ -58,6 +58,11 @@ class Request
         return $this->action;
     }
 
+    public function getMethod()
+    {
+        return $this->method;
+    }
+
     private function responseError()
     {
         die('Error');

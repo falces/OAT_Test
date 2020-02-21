@@ -10,5 +10,6 @@ $request = new Request();
 
 $actionRequest = $request->getAction();
 $parameters = $request->getParameters();
+$method = $request->getMethod();
 
-$action = new $actionRequest($parameters);
+$action = new $actionRequest($parameters, $method);
